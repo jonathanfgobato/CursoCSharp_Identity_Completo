@@ -1,0 +1,25 @@
+Anotações importantes
+
+Adicionar ao web.config a string de conexão
+Usar Html.Helpers para criação de formulários
+Utilizar ViewModels para representar as infomações que são passadas da View para a Controller
+Adicionar annotations na classe de modelo para validação
+Utilizar Html.ValidationSummary com bs para dar a mensagem de erro
+Utilizar ModeState.IsValid para validar as informações passadas
+MailGun API e PowerGrid para envio de emails
+
+Utilizar o Owin em vez de System.Web por ser mais rápido
+Alterar o Startup para subir como Owin
+Criar o context, userstore e usermanager no startup para não ser necessário criar toda vez que for utilizar
+Para colocar um campo como unique podemos usar o userValidator do userManager ou colocar o campo como Unique no banco de dados (mais sentido)
+
+
+Dúvidas
+
+Estrutura de criação das tabelas de controle de login via EF
+Async e task, pesquisar sobre, ver curso de paralelismo Alura
+Arquitetura do Identity, DbContext, UserStore e UserManager
+O que é o Owin
+Pesquisar sobre IIdentityValidator
+UserTokenProvider
+DataProtectionProvider do owin para proteção dos dados
