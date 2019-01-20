@@ -1,0 +1,30 @@
+﻿@model ByteBank.Forum.ViewModels.RegisterViewModel
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Register</h2>
+
+@using (Html.BeginForm())
+{
+    <h4>Complete o cadastro de sua conta!</h4>
+    <hr />
+
+    if (ViewData.ModelState.Keys.Any(k => ViewData.ModelState[k].Errors.Any()))
+    {
+        <div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            @Html.ValidationSummary(true, "Errors: ")
+        </div>
+    }
+
+    @Html.EditorForModel()
+
+    <div class="form-group">
+        <div class="col-md-offset-2 com-md-10">
+            <input type="submit" value="Registrar" class="btn btn-success">
+        </div>
+    </div>
+}
