@@ -1,0 +1,16 @@
+Anotações importantes
+
+Adicionar [Authorize] como annotaion da ActionResult da Controller
+Adicionar no startup o signinmanager
+Adicionar tempo de expiração ao cookie
+Ispersistent é a propriedade que seta se mantem o usuário logado (Propriedade do metodo PasswordSignInAysnc)
+Authentication manager cuida do logoff
+Como o actionresult do logoff é post é necessário criar um formulário sem nada e enviá-lo através de js
+Adicionar Lockout para proteção de senhas
+Adicionar quantidade de tentativas para bloquear usuario, tempo de bloqueio
+Adicionar no startup os atributos referentes ao lockout
+
+
+Dúvidas
+Pesquisar o que é signinmanager
+Pesquisar o que são cookies
